@@ -20,7 +20,7 @@ app.get('/external-resource', (req, res) => {
     res.send(`
     <h1>Fetching external resource</h1>
     <script>
-    fetch('https://localhost:3001/')
+    fetch('http://localhost:3001/')
     .then(response => response.json())
     .then(data => console.log(data));
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -34,7 +34,7 @@ app.get('/external-resource-open', (req, res) => {
     res.send(`
     <h1>Fetching external resource</h1>
     <script>
-    fetch('https://localhost:3001/open')
+    fetch('http://localhost:3001/open')
     .then(response => response.json())
     .then(data => console.log(data));
     </script>
